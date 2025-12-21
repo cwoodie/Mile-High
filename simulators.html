@@ -79,28 +79,26 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
-        <!-- Hero Background -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Hero Background Image -->
         <div class="absolute inset-0 z-0">
             <img src="simulator-hero.png" alt="Luxury Indoor Golf Simulator Bay"
-                class="w-full h-full object-cover scale-110 animate-slow-zoom">
-            <div class="absolute inset-0 bg-black/40"></div>
+                class="w-full h-full object-cover ken-burns">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
         </div>
 
-        <!-- Glassmorphism Card -->
         <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-            <div
-                class="p-12 md:p-16 rounded-[3rem] bg-white/10 backdrop-blur-[12px] border border-white/20 shadow-2xl animate-fade-in">
-                <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter leading-tight">
+            <div class="hero-content-card p-8 md:p-16 rounded-[40px]">
+                <h2 class="text-5xl sm:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg text-white"
+                    style="text-shadow: 0 4px 10px rgba(0,0,0,0.5);">
                     The Ultimate <span class="text-forest-green-accent">Indoor Arena</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-100 font-light leading-relaxed max-w-2xl mx-auto">
+                </h2>
+                <p class="text-xl sm:text-2xl text-gray-200 mb-10 font-light tracking-wide drop-shadow-lg">
                     PGA-Tour Accuracy in a Luxury Environment.
                 </p>
-                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <a href="booking.html"
-                        class="bg-forest-green-accent text-white font-bold px-10 py-4 rounded-2xl hover:bg-white hover:text-black transition-all text-lg uppercase tracking-tighter shadow-xl">
-                        Book a Bay
+                <div class="flex justify-center">
+                    <a href="booking.html" class="hero-cta-button rounded-xl">
+                        BOOK A BAY
                     </a>
                 </div>
             </div>
