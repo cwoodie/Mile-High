@@ -341,3 +341,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const whyUsGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-3');
     if (whyUsGrid) bentoObserver.observe(whyUsGrid);
 });
+
+/* =========================================
+   VIP Lab Toggle Logic
+   ========================================= */
+document.addEventListener('DOMContentLoaded', function () {
+    const heroSection = document.getElementById('lab-hero-section');
+    if (!heroSection) return;
+
+    const bgFitting = document.getElementById('bg-fitting-lab');
+    const bgSkill = document.getElementById('bg-skill-lab');
+    const headline = document.getElementById('lab-headline');
+    const description = document.getElementById('lab-description');
+    const prevBtn = document.getElementById('lab-prev');
+    const nextBtn = document.getElementById('lab-next');
+
+    let isSkillLab = false;
+
+    function toggleLab() {
+        isSkillLab = !isSkillLab;
+
+        // 1. Cross-fade Backgrounds
+        bgFitting.style.opacity = isSkillLab ? '0' : '1';
+        bgSkill.style.opacity = isSkillLab ? '1' : '0';
+
+        // 2. Update Content
+        if (isSkillLab) {
+            headline.innerHTML = 'The Skill <span class="text-[#6495ED]">Lab.</span>';
+            description.textContent = 'Elite player development and swing mechanics. Master your craft with tour-level coaching data.';
+        } else {
+            headline.innerHTML = 'The Fitting <span class="text-forest-green-accent">Lab.</span>';
+            description.textContent = 'Where data meets design. Experience precision equipment optimization in a tour-level environment.';
+        }
+    }
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', toggleLab);
+        nextBtn.addEventListener('click', toggleLab);
+    }
+});
