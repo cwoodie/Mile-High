@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Fitting Bay | Mile High Golf</title>
+    <meta name="description"
+        content="Private VIP fitting bay for professional club fittings and personalized golf lessons at Mile High Golf in Newton, NC.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#2C2C2C',
+                        'charcoal-light': '#3A3A3A',
+                        'forest-green': '#1B4332',
+                        'forest-green-light': '#2D6A4F',
+                        'forest-green-accent': '#40916C',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-outfit bg-charcoal text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-charcoal/95 backdrop-blur-md border-b border-forest-green/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <h1 class="text-2xl sm:text-3xl font-bold">
+                            <span class="text-white">MILE HIGH</span>
+                            <span class="text-forest-green-accent"> GOLF</span>
+                        </h1>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white hover:text-forest-green-accent transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="simulators.html" class="nav-link">Simulators</a>
+                    <a href="vip-bay.html" class="nav-link active">Fittings & Lessons</a>
+                    <a href="pro-shop.html" class="nav-link">Pro Shop</a>
+                    <a href="cornhole.html" class="nav-link">Cornhole</a>
+                    <a href="tap-n-snacks.html" class="nav-link">Tap N Snacks</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="simulators.html" class="nav-link-mobile">Simulators</a>
+                    <a href="vip-bay.html" class="nav-link-mobile active">Fittings & Lessons</a>
+                    <a href="pro-shop.html" class="nav-link-mobile">Pro Shop</a>
+                    <a href="cornhole.html" class="nav-link-mobile">Cornhole</a>
+                    <a href="tap-n-snacks.html" class="nav-link-mobile">Tap N Snacks</a>
+                    <a href="contact.html" class="nav-link-mobile">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="fitting-bay-hero.jpg" alt="Professional Golf Fitting Lab"
+                class="w-full h-full object-cover scale-110 animate-slow-zoom">
+            <div class="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/40 to-charcoal"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <div
+                class="inline-block px-4 py-1.5 mb-6 rounded-full border border-forest-green-accent/30 bg-forest-green/10 backdrop-blur-md animate-fade-in">
+                <span class="text-forest-green-accent text-xs font-bold uppercase tracking-[0.2em]">The Performance
+                    Lab</span>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-tight animate-fade-in"
+                style="animation-delay: 200ms;">
+                The Fitting <span class="text-forest-green-accent">Lab.</span>
+            </h1>
+            <div class="p-8 md:p-12 rounded-[2rem] bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-2xl animate-fade-in"
+                style="animation-delay: 400ms;">
+                <p class="text-xl md:text-2xl text-gray-200 font-light leading-relaxed">
+                    Where data meets design. Experience precision equipment optimization and elite player development in
+                    a tour-level environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-charcoal-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- The Performance Lab (Bento Grid) -->
+            <section class="mb-24">
+                <div class="text-center mb-16">
+                    <h2 class="text-forest-green-accent font-bold tracking-[0.2em] uppercase text-sm mb-4">The
+                        Performance Lab</h2>
+                    <h3 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                        Precision Fittings. <br /><span class="opacity-50">Elite Coaching.</span>
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="group relative p-10 rounded-[32px] bg-white/[0.03] border border-white/10 hover:border-forest-green-accent/50 transition-all duration-500 backdrop-blur-md overflow-hidden reveal-hidden">
+                        <div
+                            class="absolute -bottom-10 -right-10 w-32 h-32 bg-forest-green-accent/20 blur-[50px] group-hover:bg-forest-green-accent/40 transition-all duration-500">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-forest-green-accent/20 rounded-2xl flex items-center justify-center mb-8 border border-forest-green-accent/30">
+                                <svg class="w-7 h-7 text-forest-green-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white mb-4 tracking-tight">Master-Level Fittings</h4>
+                            <p class="text-gray-400 leading-relaxed font-light">
+                                Woods, Irons, Wedges, and Putters. We utilize a <span
+                                    class="text-white font-medium">master-component matrix</span> to find your
+                                perfect launch and spin window, ensuring every club in your bag has a purpose.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative p-10 rounded-[32px] bg-white/[0.03] border border-white/10 hover:border-blue-400/50 transition-all duration-500 backdrop-blur-md overflow-hidden reveal-hidden">
+                        <div
+                            class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-400/20 blur-[50px] group-hover:bg-blue-400/40 transition-all duration-500">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-blue-400/20 rounded-2xl flex items-center justify-center mb-8 border border-blue-400/30">
+                                <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white mb-4 tracking-tight">Data-Driven Lessons</h4>
+                            <p class="text-gray-400 leading-relaxed font-light">
+                                From single-session swing fixes to <span class="text-white font-medium">long-term
+                                    development plans</span>. High-speed video analysis and launch monitor feedback
+                                provided on every single rep.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative p-10 rounded-[32px] bg-white/[0.03] border border-white/10 hover:border-orange-400/50 transition-all duration-500 backdrop-blur-md overflow-hidden reveal-hidden">
+                        <div
+                            class="absolute -bottom-10 -right-10 w-32 h-32 bg-orange-400/20 blur-[50px] group-hover:bg-orange-400/40 transition-all duration-500">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-orange-400/20 rounded-2xl flex items-center justify-center mb-8 border border-orange-400/30">
+                                <svg class="w-7 h-7 text-orange-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white mb-4 tracking-tight">Tour-Grade Tech</h4>
+                            <p class="text-gray-400 leading-relaxed font-light">
+                                Powered by <span class="text-white font-medium">Uneekor and GSPro</span>. Experience
+                                precision accuracy within 0.1 degrees of club path and face angle for the most
+                                realistic ball flight in the industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Services -->
+            <div class="mb-20">
+                <h3 class="text-4xl font-bold text-center mb-12">Our Services</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Club Fitting -->
+                    <div class="info-card">
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-3">Premium Club Fitting</h4>
+                                <p class="text-gray-400 mb-4">
+                                    Get fitted for the perfect clubs tailored to your swing. We analyze every aspect of
+                                    your
+                                    game to recommend the ideal shaft, loft, lie angle, and grip for maximum
+                                    performance.
+                                </p>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Driver & woods fitting
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Iron set optimization
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Wedge & putter fitting
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Full bag analysis
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Golf Lessons -->
+                    <div class="info-card">
+                        <div class="flex items-start mb-6">
+                            <div
+                                class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-3">Professional Lessons</h4>
+                                <p class="text-gray-400 mb-4">
+                                    Work with our PGA-certified instructors in a private setting. Whether you're a
+                                    beginner
+                                    or looking to refine specific aspects of your game, we'll create a personalized
+                                    plan.
+                                </p>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        One-on-one instruction
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Swing mechanics analysis
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Short game development
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-forest-green-accent mr-2">•</span>
+                                        Course management strategy
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Menu (12-column Bento) -->
+            <section class="py-32 bg-charcoal relative -mx-4 sm:-mx-6 lg:-mx-8 mb-20 rounded-[60px] overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-20">
+                        <h3 class="text-4xl md:text-6xl font-black text-white mb-6">The Performance Menu</h3>
+                        <p class="text-gray-400 text-xl max-w-2xl mx-auto font-light">Select your path to lower scores.
+                            All sessions include tour-grade data from our Uneekor launch monitors.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <!-- Driver Optimization -->
+                        <div
+                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/10 hover:border-forest-green-accent transition-all group reveal-hidden">
+                            <h4 class="text-2xl font-bold text-white mb-2">Driver Optimization</h4>
+                            <p class="text-gray-400 mb-6 font-light text-sm">Find your optimal launch, spin, and land
+                                angle for maximum distance.</p>
+                            <div class="text-3xl font-bold text-forest-green-accent">$150 <span
+                                    class="text-xs text-gray-500 uppercase tracking-widest ml-2">60 Min</span></div>
+                        </div>
+
+                        <!-- Signature: Full Bag Blueprint -->
+                        <div
+                            class="md:col-span-4 md:row-span-2 relative p-10 rounded-[3rem] bg-gradient-to-br from-forest-green/30 to-charcoal border-2 border-forest-green-accent shadow-[0_0_50px_rgba(64,145,108,0.2)] flex flex-col justify-between reveal-hidden">
+                            <div
+                                class="absolute top-6 right-6 bg-forest-green-accent text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">
+                                Signature</div>
+                            <div>
+                                <h4 class="text-4xl font-black text-white mb-6 leading-none">Full Bag<br>Blueprint</h4>
+                                <ul class="space-y-4 mb-10">
+                                    <li class="flex items-center text-gray-200 text-sm"><span
+                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Complete
+                                        Gapping Analysis</li>
+                                    <li class="flex items-center text-gray-200 text-sm"><span
+                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Custom
+                                        Shaft
+                                        Blueprinting</li>
+                                    <li class="flex items-center text-gray-200 text-sm"><span
+                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Loft & Lie
+                                        Adjustments</li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-5xl font-black text-white mb-6">$400</div>
+                                <a href="booking.html"
+                                    class="block w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-forest-green-accent hover:text-white transition-all uppercase tracking-tighter">Book
+                                    the Blueprint</a>
+                            </div>
+                        </div>
+
+                        <!-- Single Tune-Up -->
+                        <div
+                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/10 hover:border-blue-400 transition-all reveal-hidden">
+                            <h4 class="text-2xl font-bold text-white mb-2">Single Tune-Up</h4>
+                            <p class="text-gray-400 mb-6 font-light text-sm">Quick fix for path, face, or contact issues
+                                with instant data feedback.</p>
+                            <div class="text-3xl font-bold text-blue-400">$100 <span
+                                    class="text-xs text-gray-500 uppercase tracking-widest ml-2">60 Min</span></div>
+                        </div>
+
+                        <!-- Wedge Matrix -->
+                        <div
+                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/10 hover:border-forest-green-accent transition-all reveal-hidden">
+                            <h4
+                                class="text-2xl font-bold text-white mb-2 text-sm uppercase tracking-widest text-gray-500">
+                                The Wedge Matrix</h4>
+                            <div class="text-2xl font-bold text-forest-green-accent mt-2">$125</div>
+                        </div>
+
+                        <!-- Elite 5-Pack -->
+                        <div
+                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/10 hover:border-blue-400 transition-all reveal-hidden">
+                            <h4
+                                class="text-2xl font-bold text-white mb-2 text-sm uppercase tracking-widest text-gray-500">
+                                Elite 5-Pack</h4>
+                            <div class="text-2xl font-bold text-blue-400 mt-2">$450</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology -->
+            <div
+                class="mb-20 bg-gradient-to-r from-charcoal to-charcoal-light rounded-2xl p-12 border border-forest-green/30">
+                <h3 class="text-4xl font-bold text-center mb-12">Advanced Technology</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div
+                            class="w-20 h-20 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Launch Monitor</h4>
+                        <p class="text-gray-400">
+                            Trackman or Foresight GC Quad technology providing precise data on every shot
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="w-20 h-20 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Video Analysis</h4>
+                        <p class="text-gray-400">
+                            High-speed cameras capture your swing from multiple angles for detailed review
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="w-20 h-20 bg-forest-green rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Performance Reports</h4>
+                        <p class="text-gray-400">
+                            Comprehensive data analysis with recommendations for improvement
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Menu (Refined Bento Grid) -->
+            <section class="py-24 bg-charcoal-light relative -mx-4 sm:-mx-6 lg:-mx-8 mb-20 rounded-t-[60px]">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-4">The Performance Menu</h3>
+                        <p class="text-gray-400 text-lg">Select your path to lower scores. All sessions include
+                            tour-grade
+                            data.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+
+                        <!-- Left Column: Fitting Options -->
+                        <div class="space-y-6 order-2 md:order-1">
+                            <div
+                                class="p-8 rounded-3xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-forest-green-accent/50 hover:scale-[1.02] transition-all duration-500 group relative overflow-hidden">
+                                <div
+                                    class="absolute -bottom-10 -right-10 w-24 h-24 bg-forest-green-accent/10 blur-[40px]">
+                                </div>
+                                <h4 class="text-xl font-bold text-white mb-2">Driver Optimization</h4>
+                                <p class="text-sm text-gray-400 mb-4 font-light">Find your optimal launch, spin, and
+                                    land
+                                    angle.</p>
+                                <div class="text-2xl font-bold text-forest-green-accent">$150 <span
+                                        class="text-[10px] text-gray-500 uppercase tracking-widest ml-2">60 Min</span>
+                                </div>
+                            </div>
+                            <div
+                                class="p-8 rounded-3xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-forest-green-accent/50 hover:scale-[1.02] transition-all duration-500 group relative overflow-hidden">
+                                <div
+                                    class="absolute -bottom-10 -right-10 w-24 h-24 bg-forest-green-accent/10 blur-[40px]">
+                                </div>
+                                <h4 class="text-xl font-bold text-white mb-2">The Wedge Matrix</h4>
+                                <p class="text-sm text-gray-400 mb-4 font-light">Precision gapping for your scoring
+                                    clubs.</p>
+                                <div class="text-2xl font-bold text-forest-green-accent">$125 <span
+                                        class="text-[10px] text-gray-500 uppercase tracking-widest ml-2">60 Min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Column: Signature Service -->
+                        <div
+                            class="relative p-10 rounded-[40px] bg-gradient-to-br from-forest-green/30 to-charcoal backdrop-blur-md border-2 border-forest-green-accent shadow-2xl flex flex-col justify-between group overflow-hidden order-1 md:order-2 hover:scale-[1.02] transition-all duration-500">
+                            <div class="absolute top-6 right-6">
+                                <span
+                                    class="bg-forest-green-accent text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest animate-pulse">Signature
+                                    Service</span>
+                            </div>
+                            <div>
+                                <h4 class="text-3xl font-black text-white mb-4 tracking-tighter">Full Bag Blueprint</h4>
+                                <p class="text-gray-300 mb-8 leading-relaxed font-light text-lg">Our most comprehensive
+                                    service. We analyze every club in your bag to ensure perfect gapping and component
+                                    synergy.</p>
+                                <ul class="space-y-4 mb-10">
+                                    <li class="flex items-center text-gray-200"><span
+                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3 shadow-[0_0_8px_#40916C]"></span>
+                                        Woods, Irons, Wedges & Putters</li>
+                                    <li class="flex items-center text-gray-200"><span
+                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3 shadow-[0_0_8px_#40916C]"></span>
+                                        Custom Shaft Blueprinting</li>
+                                    <li class="flex items-center text-gray-200"><span
+                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3 shadow-[0_0_8px_#40916C]"></span>
+                                        Detailed Build Specifications</li>
+                                </ul>
+                            </div>
+                            <div class="flex items-center justify-between mt-auto">
+                                <div class="text-5xl font-black text-white">$400</div>
+                                <a href="booking.html"
+                                    class="bg-white text-black font-bold px-10 py-4 rounded-2xl hover:bg-forest-green-accent hover:text-white transition-all text-base uppercase tracking-tighter shadow-xl">Book
+                                    Blueprint</a>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Lesson Options -->
+                        <div class="space-y-6 order-3 md:order-3">
+                            <div
+                                class="p-8 rounded-3xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-blue-400/50 hover:scale-[1.02] transition-all duration-500 group relative overflow-hidden">
+                                <div class="absolute -bottom-10 -right-10 w-24 h-24 bg-blue-400/10 blur-[40px]"></div>
+                                <h4 class="text-xl font-bold text-white mb-2">Single Tune-Up</h4>
+                                <p class="text-sm text-gray-400 mb-4 font-light">Quick fix for path, face, or contact
+                                    issues.</p>
+                                <div class="text-2xl font-bold text-blue-400">$100 <span
+                                        class="text-[10px] text-gray-500 uppercase tracking-widest ml-2">60 Min</span>
+                                </div>
+                            </div>
+                            <div
+                                class="p-8 rounded-3xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-blue-400/50 hover:scale-[1.02] transition-all duration-500 group relative overflow-hidden">
+                                <div class="absolute -bottom-10 -right-10 w-24 h-24 bg-blue-400/10 blur-[40px]"></div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-xl font-bold text-white">Elite 5-Pack</h4>
+                                    <span
+                                        class="text-[9px] bg-blue-400/20 text-blue-400 px-2 py-0.5 rounded font-black tracking-tighter">BEST
+                                        VALUE</span>
+                                </div>
+                                <p class="text-sm text-gray-400 mb-4 font-light">Comprehensive swing rebuild and
+                                    development.</p>
+                                <div class="text-2xl font-bold text-blue-400">$450 <span
+                                        class="text-[10px] text-gray-500 uppercase tracking-widest ml-2">5
+                                        Sessions</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- CTA -->
+            <div class="text-center bg-gradient-to-r from-forest-green to-forest-green-light rounded-2xl p-12">
+                <h3 class="text-4xl font-bold mb-4">Ready to Optimize Your Game?</h3>
+                <p class="text-xl text-gray-200 mb-8">Schedule your VIP fitting or lesson session today</p>
+                <a href="booking.html" class="btn-primary-inverse text-lg px-12 py-4">SCHEDULE NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal border-t border-forest-green/30 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <span class="text-white">MILE HIGH</span>
+                        <span class="text-forest-green-accent"> GOLF</span>
+                    </h4>
+                    <p class="text-gray-400">Premium golf entertainment in Newton, NC</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="simulators.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Simulators</a>
+                        </li>
+                        <li><a href="vip-bay.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Fittings &
+                                Lessons</a></li>
+                        <li><a href="pro-shop.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Pro Shop</a></li>
+                        <li><a href="cornhole.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Cornhole</a></li>
+                        <li><a href="tap-n-snacks.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Tap N Snacks</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Newton, NC</li>
+                        <li><a href="tel:704-555-0100" class="hover:text-forest-green-accent transition-colors">(704)
+                                555-0100</a></li>
+                        <li><a href="mailto:info@milehighgolf.com"
+                                class="hover:text-forest-green-accent transition-colors">info@milehighgolf.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-forest-green/30 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Mile High Golf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

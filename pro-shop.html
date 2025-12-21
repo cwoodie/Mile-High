@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Shop | Mile High Golf</title>
+    <meta name="description"
+        content="Premium golf equipment, apparel, and accessories from top brands at Mile High Golf in Newton, NC.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#2C2C2C',
+                        'charcoal-light': '#3A3A3A',
+                        'forest-green': '#1B4332',
+                        'forest-green-light': '#2D6A4F',
+                        'forest-green-accent': '#40916C',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-outfit bg-charcoal text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-charcoal/95 backdrop-blur-md border-b border-forest-green/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <h1 class="text-2xl sm:text-3xl font-bold">
+                            <span class="text-white">MILE HIGH</span>
+                            <span class="text-forest-green-accent"> GOLF</span>
+                        </h1>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white hover:text-forest-green-accent transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="simulators.html" class="nav-link">Simulators</a>
+                    <a href="vip-bay.html" class="nav-link">Fittings & Lessons</a>
+                    <a href="pro-shop.html" class="nav-link active">Pro Shop</a>
+                    <a href="cornhole.html" class="nav-link">Cornhole</a>
+                    <a href="tap-n-snacks.html" class="nav-link">Tap N Snacks</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="simulators.html" class="nav-link-mobile">Simulators</a>
+                    <a href="vip-bay.html" class="nav-link-mobile">Fittings & Lessons</a>
+                    <a href="pro-shop.html" class="nav-link-mobile active">Pro Shop</a>
+                    <a href="cornhole.html" class="nav-link-mobile">Cornhole</a>
+                    <a href="tap-n-snacks.html" class="nav-link-mobile">Tap N Snacks</a>
+                    <a href="contact.html" class="nav-link-mobile">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal-light to-forest-green opacity-90">
+        </div>
+        <div class="absolute inset-0 hero-pattern"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+            <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+                Pro Shop
+            </h2>
+            <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">
+                Premium golf equipment and apparel from the industry's top brands
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-charcoal-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Overview -->
+            <div class="mb-20 text-center max-w-4xl mx-auto">
+                <h3 class="text-4xl font-bold mb-6">Everything You Need for Your Best Game</h3>
+                <p class="text-lg text-gray-300 mb-8">
+                    Our pro shop features a carefully curated selection of premium golf equipment, apparel, and
+                    accessories.
+                    Whether you're looking for the latest driver technology or stylish course-ready attire, we've got
+                    you covered.
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div class="mb-20">
+                <h3 class="text-4xl font-bold text-center mb-12">Shop by Category</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="feature-card group cursor-pointer">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-2">Clubs</h4>
+                        <p class="text-gray-400 text-center text-sm">
+                            Drivers, irons, wedges, and putters from Titleist, Callaway, TaylorMade, and more
+                        </p>
+                    </div>
+
+                    <div class="feature-card group cursor-pointer">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-2">Golf Balls</h4>
+                        <p class="text-gray-400 text-center text-sm">
+                            Premium balls from Pro V1, TP5, Chrome Soft, and other top performers
+                        </p>
+                    </div>
+
+                    <div class="feature-card group cursor-pointer">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-2">Bags & Accessories</h4>
+                        <p class="text-gray-400 text-center text-sm">
+                            Cart bags, stand bags, gloves, tees, and essential accessories
+                        </p>
+                    </div>
+
+                    <div class="feature-card group cursor-pointer">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-2">Apparel</h4>
+                        <p class="text-gray-400 text-center text-sm">
+                            Performance polos, pants, outerwear, and footwear from premium brands
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Brands -->
+            <div class="mb-20">
+                <h3 class="text-4xl font-bold text-center mb-12">Featured Brands</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Titleist</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Callaway</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">TaylorMade</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Ping</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Mizuno</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Cobra</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">FootJoy</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Nike Golf</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Adidas Golf</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Under Armour</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Scotty Cameron</p>
+                    </div>
+                    <div class="info-card text-center">
+                        <p class="text-xl font-bold text-forest-green-accent">Vokey</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-20">
+                <h3 class="text-4xl font-bold text-center mb-12">Pro Shop Services</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="info-card">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Custom Club Building</h4>
+                        <p class="text-gray-400">
+                            We build custom clubs to your exact specifications. Choose your shafts, grips,
+                            lofts, and lies for a truly personalized set.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Re-gripping & Repairs</h4>
+                        <p class="text-gray-400">
+                            Professional re-gripping services and club repairs. We'll have your clubs
+                            feeling like new in no time.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Expert Advice</h4>
+                        <p class="text-gray-400">
+                            Our knowledgeable staff can help you find the perfect equipment for your game
+                            and budget. No pressure, just honest recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Offers -->
+            <div class="mb-20 bg-gradient-to-r from-forest-green to-forest-green-light rounded-2xl p-12">
+                <h3 class="text-4xl font-bold text-center mb-8">Member Benefits</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-white mb-2">10%</div>
+                        <p class="text-gray-200">Off all equipment purchases</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-white mb-2">15%</div>
+                        <p class="text-gray-200">Off apparel and accessories</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-white mb-2">FREE</div>
+                        <p class="text-gray-200">Re-gripping on club purchases</p>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="btn-primary-inverse text-lg px-12 py-4">Ask About Membership</a>
+                </div>
+            </div>
+
+            <!-- Popular Items -->
+            <div class="mb-20">
+                <h3 class="text-4xl font-bold text-center mb-12">Popular Items</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="info-card">
+                        <div class="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-forest-green-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Premium Drivers</h4>
+                        <p class="text-gray-400 mb-4">
+                            Latest models from TaylorMade, Callaway, and Titleist with adjustable weights and lofts
+                        </p>
+                        <p class="text-2xl font-bold text-forest-green-accent">From $499</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-forest-green-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Pro V1 Golf Balls</h4>
+                        <p class="text-gray-400 mb-4">
+                            Tour-proven performance with exceptional distance and control
+                        </p>
+                        <p class="text-2xl font-bold text-forest-green-accent">$54.99/dozen</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-forest-green-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Performance Polos</h4>
+                        <p class="text-gray-400 mb-4">
+                            Moisture-wicking, breathable fabrics from FootJoy, Nike, and Under Armour
+                        </p>
+                        <p class="text-2xl font-bold text-forest-green-accent">From $69</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center bg-charcoal rounded-2xl p-12 border-2 border-forest-green/30">
+                <h3 class="text-4xl font-bold mb-4">Visit Our Pro Shop</h3>
+                <p class="text-xl text-gray-300 mb-8">
+                    Stop by during your next visit or call us to check availability on specific items
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                    <a href="booking.html" class="btn-secondary">Book a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal border-t border-forest-green/30 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <span class="text-white">MILE HIGH</span>
+                        <span class="text-forest-green-accent"> GOLF</span>
+                    </h4>
+                    <p class="text-gray-400">Premium golf entertainment in Newton, NC</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="simulators.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Simulators</a>
+                        </li>
+                        <li><a href="vip-bay.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Fittings &
+                                Lessons</a></li>
+                        <li><a href="pro-shop.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Pro Shop</a></li>
+                        <li><a href="cornhole.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Cornhole</a></li>
+                        <li><a href="tap-n-snacks.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Tap N Snacks</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Newton, NC</li>
+                        <li><a href="tel:704-555-0100" class="hover:text-forest-green-accent transition-colors">(704)
+                                555-0100</a></li>
+                        <li><a href="mailto:info@milehighgolf.com"
+                                class="hover:text-forest-green-accent transition-colors">info@milehighgolf.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-forest-green/30 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Mile High Golf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

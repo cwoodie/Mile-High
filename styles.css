@@ -1,0 +1,616 @@
+/* Custom Styles for Mile High Golf */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+.nav-link {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #40916C;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #40916C;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link-mobile {
+    color: #fff;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link-mobile:hover,
+.nav-link-mobile.active {
+    color: #40916C;
+    border-left-color: #40916C;
+    background: rgba(64, 145, 108, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, #40916C 0%, #2D6A4F 100%);
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(64, 145, 108, 0.3);
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(64, 145, 108, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: 2px solid #40916C;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #40916C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(64, 145, 108, 0.3);
+}
+
+.btn-primary-inverse {
+    background: white;
+    color: #1B4332;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-primary-inverse:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: #f0f0f0;
+}
+
+.btn-accent {
+    background: linear-gradient(135deg, #6495ED 0%, #4A7BC7 100%);
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.3);
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-accent:hover::before {
+    left: 100%;
+}
+
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(100, 149, 237, 0.4);
+}
+
+/* Feature Cards */
+.feature-card {
+    background: linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 100%);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(64, 145, 108, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(64, 145, 108, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #40916C;
+    box-shadow: 0 10px 30px rgba(64, 145, 108, 0.2);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Hero Pattern */
+.hero-pattern {
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(64, 145, 108, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(64, 145, 108, 0.1) 0%, transparent 50%);
+}
+
+.bg-pattern {
+    background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.05) 10px, rgba(255, 255, 255, 0.05) 20px);
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Info Cards */
+.info-card {
+    background: linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 100%);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(64, 145, 108, 0.2);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.info-card:hover {
+    border-color: #40916C;
+    box-shadow: 0 8px 25px rgba(64, 145, 108, 0.15);
+    transform: translateY(-4px);
+}
+
+/* Gallery Grid */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    aspect-ratio: 4/3;
+    background: #3A3A3A;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(27, 67, 50, 0.9) 0%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 100%);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(64, 145, 108, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #40916C 0%, #2D6A4F 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    border-color: #40916C;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(64, 145, 108, 0.2);
+}
+
+.pricing-card:hover::before {
+    transform: scaleX(1);
+}
+
+.pricing-card.featured {
+    border-color: #40916C;
+    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+}
+
+/* Contact Form */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 1rem;
+    background: #3A3A3A;
+    border: 2px solid rgba(64, 145, 108, 0.2);
+    border-radius: 0.5rem;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: none;
+    border-color: #40916C;
+    box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #888;
+}
+
+/* Stats Counter */
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 100%);
+    border-radius: 1rem;
+    border: 1px solid rgba(64, 145, 108, 0.2);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: #40916C;
+    box-shadow: 0 8px 25px rgba(64, 145, 108, 0.15);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #40916C 0%, #2D6A4F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2C2C2C;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #40916C;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2D6A4F;
+}
+
+/* Loading Animation */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(64, 145, 108, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(64, 145, 108, 0.6);
+    }
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .pricing-card {
+        padding: 2rem;
+    }
+}
+
+/* Glassmorphism Utilities (Specific to Pricing Toggle) */
+.glass-card {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #00f2c3;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Brand Marquee */
+.marquee-section {
+    background-color: #6495ED;
+    padding: 1.5rem 0;
+    width: 110vw;
+    margin-left: -5vw;
+    transform: rotate(-2deg);
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 20s linear infinite;
+    /* Intentionally named scroll-left for L <- R movement logic, but we want L -> R so we might need to reverse or adjust logic. Wait, user asked for Left to Right. */
+    /* Correction: User said "scroll from left to right". Standard marquee goes R -> L ( <<<< ). So L -> R is ( >>>> ). */
+}
+
+.marquee-content {
+    white-space: nowrap;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 2rem;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+   To scroll Left to Right ( >>>> ):
+   We start with the content positioned to the left (e.g. -100%) and move it to 0.
+   Or we can use `animation-direction: reverse` on a standard R->L animation.
+   
+   Standard R->L: translate(0) -> translate(-100%)
+   Reverse (L->R): translate(-100%) -> translate(0)
+*/
+
+@keyframes scroll-text-lr {
+    0% {
+        transform: translateX(-50%);
+        /* Start halfway shifted left */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Move to origin */
+    }
+}
+
+.marquee-track {
+    animation: scroll-text-lr 20s linear infinite;
+}
+
+/* Staggered Reveal Utilities */
+.reveal-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ken Burns Effect */
+@keyframes ken-burns {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.ken-burns,
+.animate-slow-zoom {
+    animation: ken-burns 20s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Glassmorphism Navigation */
+.nav-transparent {
+    background: transparent;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease, padding 0.4s ease;
+    border-bottom-color: transparent;
+}
+
+.nav-scrolled {
+    background: rgba(44, 44, 44, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(64, 145, 108, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Float Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* The 'First Place' Reveal Animation */
+.reveal-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Metallic Number Gradient */
+.metallic-number {
+    background: linear-gradient(135deg, #F3F4F6 0%, #9CA3AF 20%, #F3F4F6 40%, #D1D5DB 60%, #9CA3AF 80%, #F3F4F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Glow Spotlight Effect */
+.glow-spotlight:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+/* First Place Card Interactions */
+.group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.group {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Tracking-tight for headings to look more 'Modern Luxury' */
+.tracking-tight {
+    letter-spacing: -0.025em;
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mile High Golf | Premier Golf Entertainment in Newton, NC</title>
+    <meta name="description"
+        content="Experience premium golf simulators, VIP fitting bay, pro shop, and social area with cornhole in Newton, NC. Modern golf entertainment at its finest.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#2C2C2C',
+                        'charcoal-light': '#3A3A3A',
+                        'forest-green': '#1B4332',
+                        'forest-green-light': '#2D6A4F',
+                        'forest-green-accent': '#40916C',
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-outfit bg-charcoal text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-transparent border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl sm:text-3xl font-bold">
+                        <span class="text-white">MILE HIGH</span>
+                        <span class="text-forest-green-accent"> GOLF</span>
+                    </h1>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-white hover:text-forest-green-accent transition-colors">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="simulators.html" class="nav-link">Simulators</a>
+                    <a href="vip-bay.html" class="nav-link">Fittings & Lessons</a>
+                    <a href="pro-shop.html" class="nav-link">Pro Shop</a>
+                    <a href="cornhole.html" class="nav-link">Cornhole</a>
+                    <a href="tap-n-snacks.html" class="nav-link">Tap N Snacks</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="simulators.html" class="nav-link-mobile">Simulators</a>
+                    <a href="vip-bay.html" class="nav-link-mobile">Fittings & Lessons</a>
+                    <a href="pro-shop.html" class="nav-link-mobile">Pro Shop</a>
+                    <a href="cornhole.html" class="nav-link-mobile">Cornhole</a>
+                    <a href="tap-n-snacks.html" class="nav-link-mobile">Tap N Snacks</a>
+                    <a href="contact.html" class="nav-link-mobile">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="website.jpg" alt="Mile High Golf Interior" class="w-full h-full object-cover ken-burns">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <div
+                class="bg-white/5 backdrop-blur-[6px] p-8 md:p-16 rounded-[40px] border border-white/20 shadow-2xl inline-block animate-fade-in float-animation">
+                <h2 class="text-5xl sm:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg">
+                    Tee Off. <span class="text-forest-green-accent">Throw Bags.</span> Tap In.
+                </h2>
+                <p class="text-xl sm:text-2xl text-gray-200 mb-10 font-light tracking-wide drop-shadow-lg">
+                    Elevated Golf & Social Gaming in Newton, NC
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="booking.html" class="btn-accent text-lg px-10 py-4 backdrop-blur-sm">BOOK A BAY</a>
+                    <a href="cornhole.html" class="btn-accent text-lg px-10 py-4 backdrop-blur-sm">WIN THE POT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                100+ CHAMPIONSHIP COURSES • COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE • 100+ CHAMPIONSHIP COURSES •
+                COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE •
+            </div>
+            <div class="marquee-content">
+                100+ CHAMPIONSHIP COURSES • COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE • 100+ CHAMPIONSHIP COURSES •
+                COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE •
+            </div>
+            <div class="marquee-content">
+                100+ CHAMPIONSHIP COURSES • COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE • 100+ CHAMPIONSHIP COURSES •
+                COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE •
+            </div>
+            <div class="marquee-content">
+                100+ CHAMPIONSHIP COURSES • COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE • 100+ CHAMPIONSHIP COURSES •
+                COLD TAPS • PRO FITTINGS • CASH PRIZE CORNHOLE •
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Grid -->
+    <section class="py-20 bg-charcoal-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold mb-12 text-center text-white">The Mile High Experience</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:auto-rows-[320px]">
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden md:col-span-2 cursor-pointer bg-gray-900 shadow-xl reveal-card">
+                    <img src="bento-sims.jpg" alt="Golf Simulators"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h4 class="text-2xl font-bold text-white mb-1">World-Class Simulators</h4>
+                        <p class="text-gray-300 text-sm mb-4 font-light">100+ Courses & Real-time Analytics</p>
+                        <span
+                            class="inline-block bg-[#6495ED] text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-lg">BOOK
+                            A BAY</span>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden md:col-span-1 md:row-span-2 cursor-pointer bg-gray-800 shadow-xl reveal-card">
+                    <img src="cornhole-skyscraper.jpg" alt="Cornhole Lanes"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h4 class="text-2xl font-bold text-white mb-1">Cornhole Leagues</h4>
+                        <p class="text-gray-300 text-sm font-light">Grab a lane & compete</p>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden md:col-span-1 cursor-pointer bg-gray-900 shadow-xl reveal-card">
+                    <img src="vip.png" alt="VIP Private Room"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h4 class="text-xl font-bold text-white">VIP Experience</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden md:col-span-1 cursor-pointer bg-gray-900 shadow-xl reveal-card">
+                    <img src="tap-n-snacks.png" alt="Food and Drinks"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h4 class="text-xl font-bold text-white">Tap N Snacks</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative rounded-3xl overflow-hidden md:col-span-1 cursor-pointer bg-gray-900 shadow-xl reveal-card">
+                    <img src="proshp.png" alt="Pro Shop Gear"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h4 class="text-xl font-bold text-white">Pro Shop</h4>
+                    </div>
+                </div>
+
+                <div id="review-tile"
+                    class="relative rounded-3xl overflow-hidden md:col-span-1 bg-charcoal border border-white/10 p-8 flex flex-col justify-center h-full shadow-2xl reveal-card">
+                    <div class="flex items-center gap-1 mb-2 text-[#6495ED]">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p id="review-text" class="text-white text-lg font-medium leading-relaxed italic mb-4">"Hands down
+                        the
+                        best simulator tech I've seen. The vibes are unmatched!"</p>
+                    <p id="review-author" class="text-gray-400 text-sm">— Jason M., Local Pro</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 bg-charcoal relative overflow-hidden">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(64,145,108,0.05)_0%,transparent_70%)]">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-indigo-400 font-bold tracking-widest uppercase text-sm mb-4">Why Mile High?</h2>
+                <h3 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                    The Gold Standard <br /><span class="text-forest-green-accent">Of Social Gaming.</span>
+                </h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 01 -->
+                <div
+                    class="group relative p-8 rounded-3xl bg-[#1a1a1a] border border-white/10 hover:border-forest-green-accent/80 transition-all duration-500 reveal-card hover:-translate-y-[10px] glow-spotlight">
+                    <span
+                        class="absolute bottom-0 right-6 text-9xl font-black select-none transition-colors text-forest-green-accent/10 drop-shadow-[0_0_15px_rgba(64,145,108,0.3)]">01</span>
+                    <div class="relative z-20">
+                        <div class="flex justify-between items-start mb-6">
+                            <div
+                                class="w-12 h-12 bg-forest-green-accent/20 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-forest-green-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider text-forest-green-accent bg-forest-green-accent/10 uppercase border border-forest-green-accent/20">
+                                Cash Payouts Weekly
+                            </span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">Weekly
+                            Cash Pots</h4>
+                        <p class="text-gray-400 leading-relaxed drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">This isn't just
+                            a game; it's a payday. Enter our weekly
+                            Cornhole tournaments and compete for **actual cash prizes**. Grab your bags and prove you're
+                            the best
+                            in Newton.</p>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div
+                    class="group relative p-8 rounded-3xl bg-[#1a1a1a] border border-white/10 hover:border-blue-400/80 transition-all duration-500 reveal-card hover:-translate-y-[10px] glow-spotlight">
+                    <span
+                        class="absolute bottom-0 right-6 text-9xl font-black select-none transition-colors text-blue-400/10 drop-shadow-[0_0_15px_rgba(96,165,250,0.3)]">02</span>
+                    <div class="relative z-20">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider text-blue-400 bg-blue-400/10 uppercase border border-blue-400/20">
+                                Proven Performance
+                            </span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+                            Tour-Grade Accuracy</h4>
+                        <p class="text-gray-400 leading-relaxed drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">Leveraging
+                            Uneekor sensors and GSPro software to
+                            provide tour-level feedback on every swing.</p>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div
+                    class="group relative p-8 rounded-3xl bg-[#1a1a1a] border border-white/10 hover:border-orange-400/80 transition-all duration-500 reveal-card hover:-translate-y-[10px] glow-spotlight">
+                    <span
+                        class="absolute bottom-0 right-6 text-9xl font-black select-none transition-colors text-orange-400/10 drop-shadow-[0_0_15px_rgba(251,146,60,0.3)]">03</span>
+                    <div class="relative z-20">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 bg-orange-400/20 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                            </div>
+                            <span
+                                class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider text-orange-400 bg-orange-400/10 uppercase border border-orange-400/20">
+                                Professional Gear
+                            </span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">Elite
+                            Gear & Custom Mods</h4>
+                        <p class="text-gray-400 leading-relaxed drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">We carry
+                            professional ACL-stamped bags from Kill Shot,
+                            Game Changer, and BG. Beyond the bags, we sell premium golf clubs and perform certified
+                            modifications proven to elevate your game and lower your handicap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-forest-green to-forest-green-light relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-pattern"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h3 class="text-4xl sm:text-5xl font-bold mb-6">Don't Wait: The Bay or The Bag?</h3>
+            <p class="text-xl text-gray-200 mb-8">Whether you're booking a state-of-the-art simulator or entering the
+                weekly Cornhole Tournament for cash prizes, your spot awaits.
+            </p>
+            <a href="booking.html" class="btn-accent text-lg px-12 py-4 inline-block">
+                CLAIM YOUR SPOT
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal border-t border-forest-green/30 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <span class="text-white">MILE HIGH</span>
+                        <span class="text-forest-green-accent"> GOLF</span>
+                    </h4>
+                    <p class="text-gray-400">Premium golf entertainment in Newton, NC</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="simulators.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Simulators</a>
+                        </li>
+                        <li><a href="vip-bay.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Fittings &
+                                Lessons</a></li>
+                        <li><a href="pro-shop.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Pro Shop</a></li>
+                        <li><a href="cornhole.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Cornhole</a></li>
+                        <li><a href="tap-n-snacks.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Tap N Snacks</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-forest-green-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Newton, NC</li>
+                        <li><a href="tel:704-555-0100" class="hover:text-forest-green-accent transition-colors">(704)
+                                555-0100</a></li>
+                        <li><a href="mailto:info@milehighgolf.com"
+                                class="hover:text-forest-green-accent transition-colors">info@milehighgolf.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-forest-green/30 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Mile High Golf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
