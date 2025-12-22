@@ -333,13 +333,17 @@ const bentoObserver = new IntersectionObserver((entries) => {
 
 // Target the container of your bento grid and the Why Us grid
 document.addEventListener('DOMContentLoaded', () => {
-    // Bento Grid (4 columns)
+    // Bento Grid (4 columns - Simulators Page)
     const featureGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-4');
     if (featureGrid) bentoObserver.observe(featureGrid);
 
-    // Why Us Grid (3 columns)
+    // Why Us Grid (3 columns - Home & Services)
     const whyUsGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-3');
     if (whyUsGrid) bentoObserver.observe(whyUsGrid);
+
+    // Performance Menu (12 columns - VIP Page)
+    const performanceGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-12');
+    if (performanceGrid) bentoObserver.observe(performanceGrid);
 });
 
 /* =========================================
