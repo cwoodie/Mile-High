@@ -150,63 +150,152 @@
                 </p>
             </div>
 
-            <!-- Categories -->
-            <div class="mb-20">
-                <h3 class="text-4xl font-bold text-center mb-12">Shop by Category</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="feature-card group cursor-pointer">
-                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-center mb-2">Clubs</h4>
-                        <p class="text-gray-400 text-center text-sm">
-                            Drivers, irons, wedges, and putters from Titleist, Callaway, TaylorMade, and more
-                        </p>
+            <!-- Dual-Zone Marketplace -->
+            <div class="mb-24 space-y-24">
+
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-forest-green-accent/50"></div>
+                        <h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight">The <span
+                                class="text-forest-green-accent">Golf Exchange</span></h3>
+                        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-forest-green-accent/50"></div>
                     </div>
 
-                    <div class="feature-card group cursor-pointer">
-                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                            </svg>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div
+                            class="feature-card group cursor-pointer hover:border-forest-green-accent/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-forest-green/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-forest-green-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Clubs</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Drivers, irons, and wedges from
+                                Titleist, Callaway, & TaylorMade.</p>
                         </div>
-                        <h4 class="text-xl font-bold text-center mb-2">Golf Balls</h4>
-                        <p class="text-gray-400 text-center text-sm">
-                            Premium balls from Pro V1, TP5, Chrome Soft, and other top performers
-                        </p>
-                    </div>
 
-                    <div class="feature-card group cursor-pointer">
-                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                            </svg>
+                        <div
+                            class="feature-card group cursor-pointer hover:border-forest-green-accent/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-forest-green/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-forest-green-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Balls</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Pro V1, TP5, and Chrome Soft
+                                performance packs.</p>
                         </div>
-                        <h4 class="text-xl font-bold text-center mb-2">Bags & Accessories</h4>
-                        <p class="text-gray-400 text-center text-sm">
-                            Cart bags, stand bags, gloves, tees, and essential accessories
-                        </p>
-                    </div>
 
-                    <div class="feature-card group cursor-pointer">
-                        <div class="w-16 h-16 bg-forest-green rounded-lg flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
-                                </path>
-                            </svg>
+                        <div
+                            class="feature-card group cursor-pointer hover:border-forest-green-accent/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-forest-green/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-forest-green-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Bags</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Premium stand and cart bags for the
+                                walking or riding pro.</p>
                         </div>
-                        <h4 class="text-xl font-bold text-center mb-2">Apparel</h4>
-                        <p class="text-gray-400 text-center text-sm">
-                            Performance polos, pants, outerwear, and footwear from premium brands
-                        </p>
+
+                        <div
+                            class="feature-card group cursor-pointer hover:border-forest-green-accent/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-forest-green/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-forest-green-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Apparel</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Performance polos and outerwear from
+                                Nike, FJ, and more.</p>
+                        </div>
                     </div>
                 </div>
+
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-[#6495ED]/50"></div>
+                        <h3 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight">The <span
+                                class="text-[#6495ED]">Bag Room</span></h3>
+                        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-[#6495ED]/50"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="feature-card group cursor-pointer hover:border-[#6495ED]/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-[#6495ED]/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-[#6495ED]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Pro Bags</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">ACL Pro Stamped bags from Kill Shot,
+                                BG, and Game Changer.</p>
+                        </div>
+
+                        <div class="feature-card group cursor-pointer hover:border-[#6495ED]/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-[#6495ED]/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-[#6495ED]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Regulation Boards</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Tournament-grade birch boards with
+                                UV-printed graphics.</p>
+                        </div>
+
+                        <div class="feature-card group cursor-pointer hover:border-[#6495ED]/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-[#6495ED]/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-[#6495ED]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Patches & Swag</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Velcro patches, hats, and
+                                accessories to customize your kit.</p>
+                        </div>
+
+                        <div class="feature-card group cursor-pointer hover:border-[#6495ED]/50 transition-all">
+                            <div
+                                class="w-16 h-16 bg-[#6495ED]/20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-[#6495ED]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold text-center mb-2 text-white">Jerseys</h4>
+                            <p class="text-gray-400 text-center text-sm font-light">Official Mile High league jerseys
+                                and performance hoodies.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Featured Brands -->
