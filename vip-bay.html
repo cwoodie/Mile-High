@@ -264,8 +264,9 @@
                 </div>
             </section>
 
-            <!-- Performance Menu (12-column Bento) -->
-            <section class="py-32 bg-charcoal relative -mx-4 sm:-mx-6 lg:-mx-8 mb-20 rounded-[60px] overflow-hidden">
+            <!-- Performance Menu (12-column Bento Grid) -->
+            <section id="performance-menu"
+                class="py-32 bg-charcoal relative -mx-4 sm:-mx-6 lg:-mx-8 mb-20 rounded-[60px] overflow-hidden">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-20">
                         <h3 class="text-4xl md:text-6xl font-black text-white mb-6">The Performance Menu</h3>
@@ -276,69 +277,99 @@
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                         <!-- Driver Optimization -->
                         <div
-                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/10 backdrop-blur-[10px] border border-white/10 hover:border-forest-green-accent transition-all group reveal-hidden">
-                            <h4 class="text-2xl font-bold text-white mb-2">Driver Optimization</h4>
-                            <p class="text-gray-400 mb-6 font-light text-sm">Find your optimal launch, spin, and land
-                                angle for maximum distance.</p>
-                            <div class="text-3xl font-bold text-forest-green-accent">$150 <span
-                                    class="text-xs text-gray-500 uppercase tracking-widest ml-2">60 Min</span></div>
+                            class="md:col-span-4 group relative min-h-[300px] rounded-[2.5rem] overflow-hidden cursor-pointer shadow-2xl reveal-card">
+                            <img src="performance-driver.jpg.png" alt="Driver Optimization"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                            </div>
+                            <div class="relative z-10 h-full p-8 flex flex-col justify-end">
+                                <h4 class="text-2xl font-bold text-white mb-2">Driver Optimization</h4>
+                                <p class="text-gray-200 mb-6 font-light text-sm">Find your optimal launch, spin, and
+                                    land
+                                    angle for maximum distance.</p>
+                                <div class="text-3xl font-bold text-forest-green-accent">$150 <span
+                                        class="text-xs text-gray-400 uppercase tracking-widest ml-2">60 Min</span></div>
+                            </div>
                         </div>
 
-                        <!-- Signature: Full Bag Blueprint -->
+                        <!-- Signature: Full Bag Blueprint (Centerpiece) -->
                         <div
-                            class="md:col-span-4 md:row-span-2 relative p-10 rounded-[3rem] bg-white/10 backdrop-blur-[10px] border-2 border-forest-green-accent shadow-[0_0_50px_rgba(64,145,108,0.2)] flex flex-col justify-between reveal-hidden">
-                            <div
-                                class="absolute top-6 right-6 bg-forest-green-accent text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">
-                                Signature</div>
-                            <div>
-                                <h4 class="text-4xl font-black text-white mb-6 leading-none">Full Bag<br>Blueprint</h4>
-                                <ul class="space-y-4 mb-10">
-                                    <li class="flex items-center text-gray-200 text-sm"><span
-                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Complete
-                                        Gapping Analysis</li>
-                                    <li class="flex items-center text-gray-200 text-sm"><span
-                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Custom
-                                        Shaft
-                                        Blueprinting</li>
-                                    <li class="flex items-center text-gray-200 text-sm"><span
-                                            class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Loft & Lie
-                                        Adjustments</li>
-                                </ul>
+                            class="md:col-span-4 md:row-span-2 group relative min-h-[620px] rounded-[3rem] overflow-hidden cursor-pointer shadow-2xl border-2 border-forest-green-accent shadow-[0_0_50px_rgba(64,145,108,0.2)] reveal-card">
+                            <img src="performance-full-bag.jpg.png" alt="Full Bag Blueprint"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                             </div>
-                            <div class="text-center">
-                                <div class="text-5xl font-black text-white mb-6">$400</div>
-                                <a href="booking.html"
-                                    class="block w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-forest-green-accent hover:text-white transition-all uppercase tracking-tighter">Book
-                                    the Blueprint</a>
+                            <div class="relative z-10 h-full p-10 flex flex-col justify-between">
+                                <div
+                                    class="absolute top-6 right-6 bg-forest-green-accent text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">
+                                    Signature</div>
+                                <div>
+                                    <h4 class="text-4xl font-black text-white mb-6 leading-none">Full Bag<br>Blueprint
+                                    </h4>
+                                    <ul class="space-y-4 mb-10">
+                                        <li class="flex items-center text-gray-200 text-sm"><span
+                                                class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span>
+                                            Complete
+                                            Gapping Analysis</li>
+                                        <li class="flex items-center text-gray-200 text-sm"><span
+                                                class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Custom
+                                            Shaft Blueprinting</li>
+                                        <li class="flex items-center text-gray-200 text-sm"><span
+                                                class="w-2 h-2 bg-forest-green-accent rounded-full mr-3"></span> Loft &
+                                            Lie
+                                            Adjustments</li>
+                                    </ul>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-5xl font-black text-white mb-6">$400</div>
+                                    <a href="booking.html"
+                                        class="block w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-forest-green-accent hover:text-white transition-all uppercase tracking-tighter">Book
+                                        the Blueprint</a>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Single Tune-Up -->
                         <div
-                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/10 backdrop-blur-[10px] border border-white/10 hover:border-blue-400 transition-all reveal-hidden">
-                            <h4 class="text-2xl font-bold text-white mb-2">Single Tune-Up</h4>
-                            <p class="text-gray-400 mb-6 font-light text-sm">Quick fix for path, face, or contact issues
-                                with instant data feedback.</p>
-                            <div class="text-3xl font-bold text-blue-400">$100 <span
-                                    class="text-xs text-gray-500 uppercase tracking-widest ml-2">60 Min</span></div>
+                            class="md:col-span-4 group relative min-h-[300px] rounded-[2.5rem] overflow-hidden cursor-pointer shadow-2xl reveal-card">
+                            <img src="performance-tuneup.jpg.png" alt="Single Tune-Up"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                            </div>
+                            <div class="relative z-10 h-full p-8 flex flex-col justify-end">
+                                <h4 class="text-2xl font-bold text-white mb-2">Single Tune-Up</h4>
+                                <p class="text-gray-200 mb-6 font-light text-sm">Quick fix for path, face, or contact
+                                    issues
+                                    with instant data feedback.</p>
+                                <div class="text-3xl font-bold text-blue-400">$100 <span
+                                        class="text-xs text-gray-400 uppercase tracking-widest ml-2">60 Min</span></div>
+                            </div>
                         </div>
 
-                        <!-- Wedge Matrix -->
+                        <!-- The Wedge Matrix -->
                         <div
-                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/10 backdrop-blur-[10px] border border-white/10 hover:border-forest-green-accent transition-all reveal-hidden">
-                            <h4
-                                class="text-2xl font-bold text-white mb-2 text-sm uppercase tracking-widest text-gray-500">
-                                The Wedge Matrix</h4>
-                            <div class="text-2xl font-bold text-forest-green-accent mt-2">$125</div>
+                            class="md:col-span-4 group relative min-h-[300px] rounded-[2.5rem] overflow-hidden cursor-pointer shadow-2xl reveal-card">
+                            <img src="performance-wedges.jpg.png" alt="The Wedge Matrix"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                            </div>
+                            <div class="relative z-10 h-full p-8 flex flex-col justify-end">
+                                <h4 class="text-sm uppercase tracking-widest text-gray-400 mb-2">The Wedge Matrix</h4>
+                                <div class="text-3xl font-bold text-forest-green-accent">$125</div>
+                            </div>
                         </div>
 
-                        <!-- Elite 5-Pack -->
+                        <!-- Elite 3-Pack -->
                         <div
-                            class="md:col-span-4 p-8 rounded-[2.5rem] bg-white/10 backdrop-blur-[10px] border border-white/10 hover:border-blue-400 transition-all reveal-hidden">
-                            <h4
-                                class="text-2xl font-bold text-white mb-2 text-sm uppercase tracking-widest text-gray-500">
-                                Elite 5-Pack</h4>
-                            <div class="text-2xl font-bold text-blue-400 mt-2">$450</div>
+                            class="md:col-span-4 group relative min-h-[300px] rounded-[2.5rem] overflow-hidden cursor-pointer shadow-2xl reveal-card">
+                            <img src="performance-pack.jpg.png" alt="Elite 3-Pack"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                            </div>
+                            <div class="relative z-10 h-full p-8 flex flex-col justify-end">
+                                <h4 class="text-sm uppercase tracking-widest text-gray-400 mb-2">Elite 3-Pack</h4>
+                                <div class="text-3xl font-bold text-blue-400">$300</div>
+                            </div>
                         </div>
                     </div>
                 </div>
