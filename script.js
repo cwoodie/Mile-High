@@ -446,3 +446,61 @@ document.addEventListener('DOMContentLoaded', function () {
         nextBtn.addEventListener('click', toggleSimHero);
     }
 });
+
+/* =========================================
+   Pro Shop Hero Toggle Logic
+   ========================================= */
+document.addEventListener('DOMContentLoaded', function () {
+    const proHero = document.getElementById('pro-hero-section');
+    if (!proHero) return;
+
+    const bgGolf = document.getElementById('bg-golf-shop');
+    const bgCornhole = document.getElementById('bg-cornhole-shop');
+    const content = document.getElementById('pro-content');
+    const tag = document.getElementById('pro-tag');
+    const headline = document.getElementById('pro-headline');
+    const subtext = document.getElementById('pro-subtext');
+    const cta = document.getElementById('pro-cta');
+    const prevBtn = document.getElementById('pro-prev');
+    const nextBtn = document.getElementById('pro-next');
+
+    let isCornholeView = false;
+
+    function toggleProHero() {
+        isCornholeView = !isCornholeView;
+
+        // 1. Cross-fade Backgrounds
+        bgGolf.style.opacity = isCornholeView ? '0' : '1';
+        bgCornhole.style.opacity = isCornholeView ? '1' : '0';
+
+        // 2. Slide & Fade Content Physics
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(10px)';
+
+        setTimeout(() => {
+            if (isCornholeView) {
+                tag.innerHTML = '<span class="text-[#6495ED] text-xs font-bold uppercase tracking-[0.2em]">The Bag Room</span>';
+                tag.style.borderColor = 'rgba(100, 149, 237, 0.3)';
+                tag.style.backgroundColor = 'rgba(100, 149, 237, 0.1)';
+                headline.innerHTML = 'The Cornhole <span class="text-[#6495ED]">Hub.</span>';
+                subtext.textContent = 'Tournament-grade boards and ACL-approved bags for every level.';
+                cta.textContent = 'SHOP BAGS';
+            } else {
+                tag.innerHTML = '<span class="text-forest-green-accent text-xs font-bold uppercase tracking-[0.2em]">The Golf Shop</span>';
+                tag.style.borderColor = 'rgba(64, 145, 108, 0.3)';
+                tag.style.backgroundColor = 'rgba(64, 145, 108, 0.1)';
+                headline.innerHTML = 'The Golf <span class="text-forest-green-accent">Pro Shop.</span>';
+                subtext.textContent = 'Premium equipment and apparel from the industry\'s top brands.';
+                cta.textContent = 'BROWSE GEAR';
+            }
+
+            content.style.opacity = '1';
+            content.style.transform = 'translateY(0)';
+        }, 300);
+    }
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', toggleProHero);
+        nextBtn.addEventListener('click', toggleProHero);
+    }
+});
