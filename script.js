@@ -395,3 +395,54 @@ document.addEventListener('DOMContentLoaded', function () {
         nextBtn.addEventListener('click', toggleLab);
     }
 });
+
+/* =========================================
+   Simulator Hero Toggle Logic
+   ========================================= */
+document.addEventListener('DOMContentLoaded', function () {
+    const simHero = document.getElementById('sim-hero-section');
+    if (!simHero) return;
+
+    const bgBay = document.getElementById('bg-sim-bay');
+    const bgLeague = document.getElementById('bg-sim-league');
+    const content = document.getElementById('sim-content');
+    const headline = document.getElementById('sim-headline');
+    const subtext = document.getElementById('sim-subtext');
+    const cta = document.getElementById('sim-cta');
+    const prevBtn = document.getElementById('sim-prev');
+    const nextBtn = document.getElementById('sim-next');
+
+    let isLeagueView = false;
+
+    function toggleSimHero() {
+        isLeagueView = !isLeagueView;
+
+        // 1. Cross-fade Backgrounds
+        bgBay.style.opacity = isLeagueView ? '0' : '1';
+        bgLeague.style.opacity = isLeagueView ? '1' : '0';
+
+        // 2. Slide & Fade Content
+        content.style.opacity = '0';
+        content.style.transform = 'translateY(10px)';
+
+        setTimeout(() => {
+            if (isLeagueView) {
+                headline.innerHTML = 'Competitive <span class="text-[#6495ED]">Leagues.</span>';
+                subtext.textContent = 'High-Stakes Social Gaming. Compete for Cash Weekly.';
+                cta.textContent = 'JOIN A LEAGUE';
+            } else {
+                headline.innerHTML = 'The Ultimate <span class="text-forest-green-accent">Indoor Arena</span>';
+                subtext.textContent = 'PGA-Tour Accuracy in a Luxury Environment.';
+                cta.textContent = 'BOOK A BAY';
+            }
+
+            content.style.opacity = '1';
+            content.style.transform = 'translateY(0)';
+        }, 300);
+    }
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', toggleSimHero);
+        nextBtn.addEventListener('click', toggleSimHero);
+    }
+});
