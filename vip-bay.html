@@ -415,56 +415,91 @@
                 </div>
             </section>
 
-            <section class="relative py-32 bg-fixed bg-center bg-cover"
-                style="background-image: url('feature-analytics.png');">
-                <div class="absolute inset-0 bg-charcoal/90"></div>
-                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-forest-green-accent font-bold tracking-[0.2em] uppercase text-sm mb-4">Powered by
-                        Uneekor</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-16 tracking-tight">
+            <section class="relative py-32 flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[20s] ease-in-out ken-burns"
+                        style="background-image: url('feature-analytics.png'); transform-origin: center center;">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.4)_0%,_rgba(27,27,27,0.95)_100%)]">
+                    </div>
+                </div>
+
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+                    <h2
+                        class="text-forest-green-accent font-bold tracking-[0.2em] uppercase text-sm mb-4 drop-shadow-md">
+                        Powered by Uneekor</h2>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-16 tracking-tight drop-shadow-xl">
                         The Data <span
                             class="text-transparent bg-clip-text bg-gradient-to-r from-forest-green-accent to-blue-400">Behind
                             The Swing.</span>
                     </h3>
+
                     <div class="grid md:grid-cols-3 gap-8">
                         <div
-                            class="p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-forest-green-accent/50 transition-all duration-300 group">
-                            <div class="text-forest-green-accent mb-4">
-                                <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
-                                    </path>
-                                </svg>
+                            class="tilt-card p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl relative overflow-hidden group cursor-pointer">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             </div>
-                            <h4 class="text-xl font-bold text-white mb-2">Uneekor EYE XO</h4>
-                            <p class="text-gray-400 text-sm leading-relaxed">High-speed dual camera technology that
-                                captures club and ball data with 99.9% accuracy.</p>
+                            <div class="relative z-10">
+                                <div
+                                    class="text-forest-green-accent mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-12 h-12 mx-auto filter drop-shadow-[0_0_10px_rgba(64,145,108,0.5)]"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-2xl font-bold text-white mb-3">Uneekor EYE XO</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed font-light">High-speed dual camera
+                                    technology that captures club and ball data with <span
+                                        class="text-white font-bold">99.9% accuracy</span>.</p>
+                            </div>
                         </div>
+
                         <div
-                            class="p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-blue-400/50 transition-all duration-300 group">
-                            <div class="text-blue-400 mb-4">
-                                <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
-                                    </path>
-                                </svg>
+                            class="tilt-card p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl relative overflow-hidden group cursor-pointer">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             </div>
-                            <h4 class="text-xl font-bold text-white mb-2">Swing Optix</h4>
-                            <p class="text-gray-400 text-sm leading-relaxed">Frame-by-frame video analysis from face-on
-                                and down-the-line angles synced to your data.</p>
+                            <div class="relative z-10">
+                                <div
+                                    class="text-blue-400 mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-12 h-12 mx-auto filter drop-shadow-[0_0_10px_rgba(96,165,250,0.5)]"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 00-2-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-2xl font-bold text-white mb-3">Swing Optix</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed font-light">Frame-by-frame video
+                                    analysis from face-on and down-the-line angles <span
+                                        class="text-white font-bold">synced perfectly</span> to your data.</p>
+                            </div>
                         </div>
+
                         <div
-                            class="p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-orange-400/50 transition-all duration-300 group">
-                            <div class="text-orange-400 mb-4">
-                                <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
+                            class="tilt-card p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl relative overflow-hidden group cursor-pointer">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             </div>
-                            <h4 class="text-xl font-bold text-white mb-2">GSPro Software</h4>
-                            <p class="text-gray-400 text-sm leading-relaxed">The most realistic ball physics in the
-                                industry, featuring 4K graphics and true-to-life roll.</p>
+                            <div class="relative z-10">
+                                <div
+                                    class="text-orange-400 mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-12 h-12 mx-auto filter drop-shadow-[0_0_10px_rgba(251,146,60,0.5)]"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="text-2xl font-bold text-white mb-3">GSPro Software</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed font-light">The most realistic ball
+                                    physics in the industry, featuring <span class="text-white font-bold">4K
+                                        graphics</span> and true-to-life roll.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
