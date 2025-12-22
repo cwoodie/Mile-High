@@ -351,8 +351,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const bgFitting = document.getElementById('bg-fitting-lab');
     const bgSkill = document.getElementById('bg-skill-lab');
+    const labContent = document.getElementById('lab-content');
     const headline = document.getElementById('lab-headline');
     const description = document.getElementById('lab-description');
+    const ctaButton = document.getElementById('lab-cta');
     const prevBtn = document.getElementById('lab-prev');
     const nextBtn = document.getElementById('lab-next');
 
@@ -365,14 +367,27 @@ document.addEventListener('DOMContentLoaded', function () {
         bgFitting.style.opacity = isSkillLab ? '0' : '1';
         bgSkill.style.opacity = isSkillLab ? '1' : '0';
 
-        // 2. Update Content
-        if (isSkillLab) {
-            headline.innerHTML = 'The Skill <span class="text-[#6495ED]">Lab.</span>';
-            description.textContent = 'Elite player development and swing mechanics. Master your craft with tour-level coaching data.';
-        } else {
-            headline.innerHTML = 'The Fitting <span class="text-forest-green-accent">Lab.</span>';
-            description.textContent = 'Where data meets design. Experience precision equipment optimization in a tour-level environment.';
-        }
+        // 2. Premium 'Slide & Fade' Logic for Content
+        // Step A: Fade Out & Slide Down
+        labContent.style.opacity = '0';
+        labContent.style.transform = 'translateY(10px)';
+
+        // Step B: Wait 300ms, then Swap Content
+        setTimeout(() => {
+            if (isSkillLab) {
+                headline.innerHTML = 'The Skill <span class="text-[#6495ED]">Lab.</span>';
+                description.textContent = 'Elite player development and swing mechanics. Master your craft with tour-level coaching data.';
+                if (ctaButton) ctaButton.textContent = 'BOOK A LESSON';
+            } else {
+                headline.innerHTML = 'The Fitting <span class="text-forest-green-accent">Lab.</span>';
+                description.textContent = 'Where data meets design. Experience precision equipment optimization in a tour-level environment.';
+                if (ctaButton) ctaButton.textContent = 'BOOK A FITTING';
+            }
+
+            // Step C: Fade In & Slide Up
+            labContent.style.opacity = '1';
+            labContent.style.transform = 'translateY(0)';
+        }, 300);
     }
 
     if (prevBtn && nextBtn) {
