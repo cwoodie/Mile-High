@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const whyUsGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-3');
     if (whyUsGrid) bentoObserver.observe(whyUsGrid);
     // Performance Menu (12 columns) - ADD THIS
-    const performanceGrid = document.querySelector('.grid-cols-1.md\\:grid-cols-12');
+    const performanceGrid = document.getElementById('performance-grid');
     if (performanceGrid) bentoObserver.observe(performanceGrid);
 });
 
