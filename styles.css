@@ -659,19 +659,34 @@ img {
     letter-spacing: -0.025em;
 }
 
-/* The Mile High 'Dark Mode Green' Background */
+/* The Mile High 'Elevation' Background - Lighter Tint */
 .bg-elevation {
     background-color: #1a1a1a;
-    /* Fallback color */
 
-    /* Heavy dark overlay (92% opacity) on top of the green pattern */
+    /* Reduced opacity (75% to 85%) to let the green pattern shine through */
     background-image:
-        linear-gradient(rgba(26, 26, 26, 0.92), rgba(26, 26, 26, 0.95)),
+        linear-gradient(rgba(26, 26, 26, 0.75), rgba(26, 26, 26, 0.85)),
         url('green-pattern.png');
 
     background-attachment: fixed;
-    /* Parallax: Image stays still while you scroll */
     background-size: cover;
-    /* Stretches image to cover the whole section */
     background-position: center;
+}
+
+/* Gradient Animation for Text */
+@keyframes gradient-x {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animate-gradient-x {
+    background-size: 200% auto;
+    animation: gradient-x 4s ease infinite;
 }
