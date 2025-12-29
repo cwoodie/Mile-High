@@ -79,20 +79,34 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative w-full h-[50vh] max-h-[600px] flex items-center justify-center overflow-hidden pt-20">
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 z-0">
-            <img src="cornhole-page.jpg" alt="Cornhole at Mile High Golf"
-                class="w-full h-full object-cover object-center">
-            <div class="absolute inset-0 bg-charcoal/60"></div>
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[30s] ease-linear ken-burns"
+                style="background-image: url('cornhole-page.jpg');">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
-            <h2 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-                The Battle for the Bag
-            </h2>
-            <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">
-                Play to Win: High-Stakes Cornhole Leagues with Weekly Cash Prizes.
-            </p>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <div
+                class="bg-white/5 backdrop-blur-[3px] p-8 md:p-16 rounded-[40px] border border-white/20 shadow-2xl inline-block animate-fade-in float-animation">
+                <h2 class="text-5xl sm:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg text-white">
+                    The Battle <br class="md:hidden" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6495ED] to-orange-400">For The
+                        Bag.</span>
+                </h2>
+
+                <p
+                    class="text-xl sm:text-2xl text-gray-200 mb-10 font-light tracking-wide drop-shadow-lg max-w-2xl mx-auto">
+                    High-Stakes Leagues. Weekly Cash Prizes. <br class="hidden md:block" />
+                    You bring the throw, we bring the payout.
+                </p>
+
+                <a href="booking.html"
+                    class="btn-accent text-lg px-12 py-4 backdrop-blur-sm shadow-[0_0_20px_rgba(100,149,237,0.4)] hover:shadow-[0_0_30px_rgba(100,149,237,0.6)]">
+                    WIN THE POT
+                </a>
+            </div>
         </div>
     </section>
 
